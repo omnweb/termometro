@@ -1,0 +1,533 @@
+img { max-width:100%; }
+
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+}
+a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #d7d7d7;
+    max-width: 100%;
+   
+}
+
+/* Page Header */
+
+.conteudo{
+    padding:10%; 
+    margin-top: -5%;    
+}
+
+/*mensagem de erro jquery*/
+
+.error{
+    color:#9c092f;
+    font-size:1em;
+}
+
+/* Form */
+
+.form{	
+    background-color: #f8f9fa;
+    padding: 6%;
+	margin:0%;	
+	width:100%;
+}
+.form-pesquisa{
+    background-color: #f8f9fa;
+    padding: 6%;
+	margin:0 0 0 15%;	
+	width:70%;
+}
+.form1{	
+	margin:0 0 0 15%;	
+	width:70%;
+}
+
+
+/* Rádio-image */
+
+.div-radio{
+    display: inline;   
+}
+.radio-image-range{   
+    margin: 0;
+    padding: 0;
+} 
+.label-2{
+    margin-left: 0%;
+}
+.radio-image{
+    padding: 2%;
+    margin-left: 30%;
+}  
+.label-2{
+    margin-left: 20%;
+}
+
+.radio-image label > input, 
+.radio-image-range label > input,
+.radio-image-range-2 label > input{
+    visibility: hidden;
+}
+.radio-image label > input + img,
+.radio-image-range label > input + img,
+.radio-image-range-2 label > input + img{
+    cursor:pointer;
+    border:4px solid #d7d7d7;
+    border-radius:15px;
+    padding:0;
+}
+.radio-image label > input:checked + img,
+.radio-image-range label > input:checked + img,
+.radio-image-range-2 label > input:checked + img{
+    border:4px solid #9c092f;
+}
+
+
+/* Tabela */
+
+.conteudo-login{
+    padding: 5%;
+    margin:0 0 0 25%;	
+    width:50%;
+}
+.conteudo-tabela{
+    padding: 2% 10%;  
+     
+}
+.table-red{
+    background-color: rgba(255, 12, 23, .65);
+    color: white;
+}
+.table-red-2{
+    background-color:  rgba(255, 64, 42, 0.5);
+    color: white;
+}
+.table-orange{
+    background-color: rgba(255, 177, 0, 0.5);
+}
+.table-green{
+    background-color: rgba(0, 208, 82, 0.5);
+}
+.table-green-2{
+    background-color: rgba(0, 130, 32, 0.5);
+    color: white;
+}
+.table tr:hover{    
+    color:black;     
+}
+table th{
+    background-color:#5e5e5e;
+    color:#fff;
+}
+
+.table-responsive h2{
+    text-align: center; 
+    padding: 0 0 2% 0;
+}
+.data-button{
+    padding: 3.5%;
+}
+.campanha-button{
+    margin-top: 4%;
+}
+#media-pesquisa {
+    background-color: #f8f9fa;
+    padding: 0%;
+}
+
+#nav-tabContent{
+    background-color: #f8f9fa;
+    padding: 0%;
+}
+
+.quicksearch{
+    margin: 0 0 5% 0;
+}
+/* Menu Tabela */
+
+nav > .nav.nav-tabs{
+
+    border: none;
+      color:#fff;
+      background:#5a6268;
+      border-radius:0;
+  
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+    border: none;
+      padding: 10px 25px;
+      color:#fff;
+      background:#5a6268;
+      border-radius:0;
+  }
+  
+  nav > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #9c092f ;
+  }
+  .tab-content{
+    background: #fdfdfd;
+      line-height: 25px;
+      border: 1px solid #ddd;
+      border-top:13px solid #9c092f;
+      border-bottom:5px solid #9c092f;
+      padding:30px 25px;
+  }
+  
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+    border: none;
+      background: #23272b;
+      color:#fff;
+      border-radius:0;
+      transition:background 0.20s linear;
+  }
+
+
+
+/* Media Queryes */
+
+/* Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) { 
+    /* Box de Conteúdo */
+    .conteudo{
+        padding:0%; 
+        margin-top: 5%;           
+    } 
+    
+    /* Formulários */
+    
+    .form{	        
+        padding: 10%;
+        margin:0 0 0 5%;	
+        width:90%;
+    }
+    .form-pesquisa{	
+        padding: 2%;
+        margin:0 0 0 5%;	
+        width:90%;
+    }
+    .form-tabela{
+        padding: 10% 0;
+        margin:5% 0 0 0;
+    }
+    .radio-img{
+        width: 80%;
+    }
+    .form1{	
+        margin:0 0 0 15%;	
+        width:70%;
+    } 
+    .radio-image{
+        padding: 1%;
+        margin-left: 25%;
+    }  
+    .label-2{
+        margin-left: 10%;
+    }
+
+    .login {
+        padding: 10%;
+    }
+
+     /*Tabelas  */
+
+    .conteudo-tabela{
+        padding: 5% ; 
+        margin-top: 5%; 
+        width: 100%;              
+    }
+    .conteudo-login{
+        padding: 5%;
+        margin:10% 0 0 10%;	
+        width:80%;
+    }
+    .header{
+        font-size: 1em;
+    }
+    .quicksearch{
+        margin: 0 0 5% 0;
+    }
+    /*botões*/    
+
+    .enviar{	
+        width:45%;
+    }
+    /* texto */
+    h1{
+        font-size: 1.8em;
+        margin-top: 5%;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.5em;
+        margin: 5%  0 0 0%;
+        text-align: center;
+    }
+    p{
+        padding: 0 5%;
+          font-weight: bold;
+    }
+    h5{
+        font-size: 1.3em;
+        padding: 0 5%;
+    }
+    nav > div a.nav-item.nav-link.active:after{
+        display: none;
+    }
+}
+
+/* // Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .conteudo{
+        padding:10%; 
+        margin-top: 5%;    
+    } 
+    .conteudo-pesquisa{
+        padding:5%; 
+    }
+    /* Formulários */
+    .form{	        
+        padding: 10%;
+        margin:0 0 0 5%;	
+        width:90%;
+    }
+    .form-pesquisa{	        
+        padding: 10%;
+        margin:0 0 0 10%;	
+        width:80%;
+    }
+    .form-tabela{
+        padding: 5% 0;
+        margin:2% 0 0 12%;
+    }
+    .cadastro_empresa{
+        padding: 20%;
+    }
+    .conteudo-tabela{
+        padding: 5% ; 
+        margin-top: 5%; 
+        width: 100%;              
+    }
+    /*botões*/
+
+    .enviar{	
+        width:40%;
+    }
+    h1{
+        font-size: 1.8em;
+        margin-top: 5%;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.3em;
+        margin: 5%  0 0 0%;
+        text-align: center;
+    }
+    p{
+        padding: 0 5%;
+        font-weight: bold;
+    }
+    h5{
+        font-size: 1.3em;
+        padding: 0 5%;
+    }
+    .radio-image-range{
+        padding: 0%;
+        margin-left: 2%;
+    } 
+    .radio-image{
+        padding: 2%;
+        margin-left: 29%;
+    }  
+    .label-2{
+        margin-left: 10%;
+    }
+    nav > div a.nav-item.nav-link.active:after{
+        display: none;
+    }
+}
+ 
+ /* Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+     /* Box de Conteúdo */
+     .conteudo{
+        padding:10%; 
+        margin-top: 2%;    
+    } 
+    .conteudo-pesquisa{
+        padding:2%; 
+    }
+    /* Formulários */
+    .form{	        
+        padding: 10%;
+        margin:0 0 0 5%;	
+        width:90%;
+    }
+    .form-pesquisa{	        
+        padding: 2%;
+        margin:0 0 0 2%;	
+        width:95%;
+    }
+    .form1{	
+        margin:0 0 0 15%;	
+        width:70%;
+    } 
+    .radio-image{
+        padding: 2%;
+        margin-left: 30%;
+    } 
+    .form-tabela{
+        padding: 10% 0;
+        margin:5% 0 0 0;
+    }
+    .radio-image-range{
+        padding: 2%;
+        margin-left: 0%;
+    }  
+    .label-2{
+        margin-left: 20%;
+    }
+    
+     /*Tabelas  */
+
+    .conteudo-tabela{
+        padding: 2%;        
+    }
+    /*botões*/
+
+    .enviar{	
+        width:40%;
+    }
+    /* texto */
+    h1{
+        font-size: 2em;
+        margin: 5%  0 0 15%;
+    }
+    p{
+        font-size: 1.2em;
+        padding: 0 5%;
+    }
+    h5{
+        font-size: 1.5em;
+        padding: 0 5%;
+    }
+    nav > div a.nav-item.nav-link.active:after{
+        display: none;
+    }
+ }
+
+ /* Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .conteudo{
+        padding:0%; 
+        margin-top: 5%;    
+    } 
+    /* Formulários */
+    .form{	        
+        padding: 8.5%;
+        margin:0 0 0 10%;	
+        width:80%;
+    }
+    .form-pesquisa{	        
+        padding: 8.5%;
+        margin:0 0 0 10%;	
+        width:80%;
+    }
+    .form1{	
+        margin:0 0 0 15%;	
+        width:70%;
+    } 
+    
+     /*Tabelas  */
+
+    .conteudo-tabela{
+        padding: 2%;        
+    }
+    /*botões*/
+
+    .enviar{	
+        width:40%;
+    }
+    /* texto */
+    h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2em;  
+    }
+    h5{
+        font-size: 1.5em;
+    }
+}
+
+ /* Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) { 
+    .conteudo{
+        padding:0%; 
+        margin-top: 5%;           
+    } 
+    
+    
+    /* Formulários */
+    .form-cadastro{       
+        padding: 5%;
+        margin:0%;
+        margin:0 0 10% 15%;	
+        width:70%;
+    }
+
+    .form-pesquisa{	
+        padding: 10%;
+        margin:0 0 0 15%;	
+        width:70%;
+    }
+    .form-tabela{
+        padding: 5% 0;
+        margin:2% 0 0 15%;
+    }
+
+     /* texto */
+     h1{
+        font-size: 2.5em;
+        margin-top: 5%;
+        text-align: center;
+    }
+    h2{
+        font-size: 2em;
+        margin: 5%  0 0 0%;
+        text-align: center;
+    }
+    p{
+        padding: 0 5%;
+          font-weight: bold;
+          font-size: 1.2em;
+    }
+    h5{
+        font-size: 1.7em;
+        padding: 0 5%;
+    }
+ }
