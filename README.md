@@ -15,7 +15,7 @@ Estas instruções lhe darão uma cópia do projeto em funcionamento em sua máq
 Você precisa ter p Mysql e o Apache instalados em sua máquina ou utilizar um instalador de pacotes como xampp ou wamp
 
 ```
-extrais na pasta htdocs (xampp ou wamp)
+extrair na pasta htdocs (xampp ou wamp)
 Acessar pela URL: http://localhost/termometro
 ```
 
